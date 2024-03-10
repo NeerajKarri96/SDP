@@ -31,13 +31,11 @@
         <div class="card-body">
             <h5 class="card-title">{{job_details.job_des}}</h5>
             <p class="card-text">{{job_details.job_req}}</p>
+            <p class="card-text">{{job_details.job_sal}}</p>
             <p class="card-text">{{job_details.work_loc}}</p>
             <p class="card-text">{{job_details.app_email}}</p>
-            <a href="#" class="btn btn-primary">Edit</a>
-            <!-- Add a space between buttons -->
-            &nbsp;
-            <!-- Make Delete button red in color -->
-            <a href="#" class="btn btn-danger">Delete</a>
+            <a href="{% url 'edit_jobpost' job_details.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'delete_job' job_details.id %}" class="btn btn-danger">Delete</a>
         </div>
     </div>
     {% endfor %}

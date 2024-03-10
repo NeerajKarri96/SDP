@@ -4,5 +4,6 @@ from . import views
 #accoding to yt
 urlpatterns = [
 path('',views.studenthomepage,name='studenthomepage'),
-path('apply',views.applyForJob,name='apply'),
+path('apply',views.view_job_details,name='apply'),
+path('myProfile',views.myProfile,name='myProfile'),
 ]

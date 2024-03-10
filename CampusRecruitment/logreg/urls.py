@@ -3,7 +3,8 @@ from . import views
 #test northing is real
 #accoding to yt
 urlpatterns = [
-path('',views.first,name='first'),
+path('',views.home,name='home'),
+path('first/',views.first,name='first'),
 path('role/',views.role,name='role'),
 path('studentsignup/',views.studentsignup,name='studentsignup'),
 path('companysignup/',views.companysignup,name='companysignup'),
